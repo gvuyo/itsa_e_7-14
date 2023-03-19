@@ -1,22 +1,11 @@
-#include <iostream>
+#include <iostream> 
+#include <algorithm>  
 using namespace std;
-int main() {
-	int a, b;
-	while (cin >> a >> b) {
-		while (a!=0 && b!=0)
-		{
-			if (a >= b) {
-				a = a % b;
-			}
-			else if (a < b) {
-				b = b % a;
-			}
-		}
-		if (a >= b){
-			cout << a << endl;
-		}
-		else {
-			cout << b << endl;
-		}
-	}
+int main(){
+
+    int a,b;
+    while(cin>>a>>b){
+        cout<<__gcd(a,b)<<"\n";//gcd求最大公因數
+    }
+    return 0;
 }

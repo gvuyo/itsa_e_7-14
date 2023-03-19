@@ -72,10 +72,10 @@ int main() {
             {
                 if(jr[p]-1>q)cout<<Card[p][q]<<" ";
                 else {
-                    if(p==n-1)cout<<Card[p][q];
-                    else cout<<Card[p][q]<<endl;
+                    cout<<Card[p][q];
                     }
-            } 
+            }
+            if(p<n-1)cout<<endl;
     }
 
     return 0;
