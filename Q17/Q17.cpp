@@ -8,6 +8,7 @@ int main(){
     string dir;
     string dir1[20];
     getline(cin,txt);
+    cin.ignore(1,'\n');
     istringstream ss(txt);
     while (getline(ss,dir,' '))
     {
