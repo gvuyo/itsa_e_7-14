@@ -23,7 +23,10 @@ int main()
 	for (i = 0; i < 26; i++) {
 		if (i < 25) {
 			if (arr[i] != 0) {
-				cout << char(97 + i) << ":" << arr[i] << endl;
+				if(i<25)
+					cout << char(97 + i) << ":" << arr[i] << endl;
+				else
+					cout << char(97 + i) << ":" << arr[i];
 			}
 		}
 	}

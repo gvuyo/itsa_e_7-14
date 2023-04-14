@@ -12,9 +12,10 @@ int main(){
     istringstream ss(txt);
     while (getline(ss,dir,' '))
     {
-        if(dir[0]<'Z'){
+        dir[0]=tolower(dir[0]);
+        /*if(dir[0]<'Z'){
             dir[0]=dir[0]+32;
-        }
+        }*/
         dir1[i]=dir;
         i++;
     }
